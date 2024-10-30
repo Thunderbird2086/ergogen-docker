@@ -273,7 +273,7 @@ main() {
 
   if [ $add_vanilla -eq 1 ]; then
     local tmp=( "https://github.com/ergogen/ergogen.git#src/footprints" )
-    tmp += "${sources[@]}"
+    tmp+=" ${sources[@]}"
     sources=($tmp)
   fi
 
